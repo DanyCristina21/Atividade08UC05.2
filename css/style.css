@@ -312,3 +312,145 @@ input{
     margin-top: 1rem;
 }
 
+.menu .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu input#searchInput {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 250px; /* Barra de busca maior */
+}
+
+/* Estilo para a imagem do usuário e saudação */
+#loginSection {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.user-name .greeting {
+    font-size: 0.8rem;
+}
+
+.user-name .username {
+    font-weight: bold;
+}
+
+/* Estilo do botão de logoff */
+#logoutButton {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.user-profile:hover #logoutButton {
+    display: block;
+}
+
+.menu .categories {
+    display: flex;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.menu .categories li {
+    margin: 0 0.5rem;
+}
+
+.menu .categories a, #loginButton, .cart {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+ .cart {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#loginButton:hover, .cart:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do perfil de usuário */
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.user-name .greeting {
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+.user-name .username {
+    font-size: 1rem;
+}
+
+/* Estilo do carrinho flutuante */
+.cart {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart:hover .cart-popup {
+    display: block;
+}
+
+.cart-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000; /* Garante que o pop-up fique sobre outros elementos */
+}
+
+
+

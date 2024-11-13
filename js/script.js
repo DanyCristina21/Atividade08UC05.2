@@ -19,7 +19,7 @@ $(document).ready(function () {
         const user = localStorage.getItem("user");
         if (user) {
             const userName = user;
-            const userPhoto = "menina.png"; // Imagem fictícia do usuário
+            const userPhoto = "Img/usuario1.png"; // Imagem fictícia do usuário
             $("#loginSection").html(`
                 <div class="user-profile">
                     <img src="${userPhoto}" class="user-photo" alt="Foto do usuário">
@@ -39,7 +39,7 @@ $(document).ready(function () {
             });
         } else {
             $("#loginSection").html(`
-                <a href="login.html" id="loginButton" class="button">Login</a>
+                <a href="login.html" id="loginButton" class="button"><img src="Img/loginButton.png"></a>
             `);
         }
     }

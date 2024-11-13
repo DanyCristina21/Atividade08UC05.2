@@ -27,14 +27,11 @@
     <header>
         <div class="container-fluid">
             <div class="row justify-content-md-center">
-                <div class="col-2">
+                <div class="col-2 align-self-center">
                     <img src="Img/logoGM.jpg" alt="logo" class="img-fluid">
                 </div>
-                <div class="col-7">
+                <div class="col-6 align-self-center">
                     <img src="Img/slogan.png" class="img-fluid" alt="Imagem responsiva">
-                </div>
-                <div class="col-1 align-self-center">
-                    <img src="Img/duvida1.png" alt="iconeCab" class="img-fluid">
                 </div>
                 <div class="col-1 align-self-center">
                     <img src="Img/favorito1.png" alt="iconeCab1" class="img-fluid">
@@ -42,38 +39,59 @@
                 <div class="col-1 align-self-center">
                     <img src="Img/compra1.png" alt="iconeCab2" class="img-fluid">
                 </div>
+                <div class="col-2 align-self-center">
+                    <div id="loginSection">
+                        <!-- Botão de Login ou Imagem do Usuário -->
+                        <!-- Botão de Login agora como link -->
+                        <a href="login.html" id="loginButton" class="button"><img src="Img/loginButton.png"></a>
+                    </div>
+                </div>
                 <!--Separei os ícones e alterei a class por causa da responsividade-->
                 <!--Atualizei os ícones do cabeçalho nomeando cada um deles-->
             </div>
-        </div>      
+        </div>
     </header>
 
-<!--Fiz essa outra opção de menu porque a outra não ficou responsiva, tentei modificar para que ficasse, mas não consegui-->
-<!--Essa opção de menu não consegui ainda colocar a pesquisa na lateral, estou tentando-->
+    <!--Fiz essa outra opção de menu porque a outra não ficou responsiva, tentei modificar para que ficasse, mas não consegui-->
+    <!--Essa opção de menu não consegui ainda colocar a pesquisa na lateral, estou tentando-->
     <div class="container-fluid">
         <nav class="navbar bg-body-tertiary">
             <form class="container-fluid justify-content-md-center">
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="index.html"><h5>HOME</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="games.html"><h5>GAMES</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="montar.html"><h5>MONTE SEU PC</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="hardware.html"><h5>HARDWARE</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="perifericos.html"><h5>PERIFÉRICOS</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="celulares.html"><h5>SMARTPHONES</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button" ><a class="nav-link" href="hoffice.html"><h5>WORK</h5></a></button>
-                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="login.html"><h5>LOGIN</h5></a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="index.html">
+                        <h5>HOME</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="games.html">
+                        <h5>GAMES</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="montar.html">
+                        <h5>MONTE SEU PC</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="hardware.html">
+                        <h5>HARDWARE</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="perifericos.html">
+                        <h5>PERIFÉRICOS</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="celulares.html">
+                        <h5>SMARTPHONES</h5>
+                    </a></button>
+                <button class="btn btn-outline-primary me-4" type="button"><a class="nav-link" href="hoffice.html">
+                        <h5>WORK</h5>
+                    </a></button>
             </form>
         </nav>
     </div>
+    <br>
     <div class="container text-center">
         <div class="row justify-content-md-center">
-            <div class="col-1"></div>
+            <div clas="col-1"></div>
             <div class="col-10">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Pesquisa..." aria-label="Search">
+                    <input class="form-control me-4" type="search" placeholder="Pesquisa..." aria-label="Search">
                     <button class="btn btn-outline-danger" type="submit">PESQUISAR</button>
                 </form>
             </div>
-            <div class="col-1"></div>
+            <div clas="col-1"></div>
         </div>
     </div>
     <br>
@@ -108,5 +126,7 @@
                 </div>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
