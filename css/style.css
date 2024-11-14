@@ -137,14 +137,20 @@ input{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.paragrafoConta{
+    font: normal bold 18pt Arial Helvetica;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .conta{
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .link{
-    color:aqua;
+    color:#1181D1;
 }
 .ofertas{
     justify-content: center;
@@ -470,6 +476,55 @@ input{
 .cart-container h2 {
     margin-bottom: 1rem;
 }
+
+/* Estilos para os Produtos */
+
+.products h2{
+	padding: 2rem;
+    display: grid;
+	gap: 1rem;
+    text-align: center;	
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    height: 350px;
+}
+/*
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+*/
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
 
 
 

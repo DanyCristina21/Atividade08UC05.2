@@ -79,22 +79,22 @@ $(document).ready(function () {
 });
 
 
-    // Função para realizar a busca dos produtos
-    function searchProducts() {
-        var input, filter, cards, cardTitle, i, txtValue;
-        input = document.getElementById('searchInput');
-        filter = input.value.toUpperCase();
-        cards = document.getElementsByClassName('card');
+// Função para realizar a busca dos produtos
+function searchProducts() {
+    var input, filter, cards, cardTitle, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    cards = document.getElementsByClassName('card');
 
-        for (i = 0; i < cards.length; i++) {
-            cardTitle = cards[i].getElementsByClassName('card-title')[0];
-            txtValue = cardTitle.textContent || cardTitle.innerText;
+    for (i = 0; i < cards.length; i++) {
+        cardTitle = cards[i].getElementsByClassName('card-title')[0];
+        txtValue = cardTitle.textContent || cardTitle.innerText;
 
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                cards[i].style.display = "";
-            } else {
-                cards[i].style.display = "none";
-            }
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
         }
-
     }
+
+}

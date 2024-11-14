@@ -91,7 +91,7 @@
             <div clas="col-1"></div>
             <div class="col-10">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-4" type="search" placeholder="Pesquisa..." aria-label="Search">
+                    <input class="form-control me-4" type="search" placeholder="Pesquisa..." id="searchInput" onkeyup="searchProducts()">
                     <button class="btn btn-outline-danger" type="submit">PESQUISAR</button>
                 </form>
             </div>
@@ -170,23 +170,39 @@
             <div class="col-2"></div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-md-center">
-            <div class="col-3">
-                <img src="Img/oferta1.jpg" alt="oferta1" class="img-fluid">
-            </div>
-            <div class="col-3">
-                <img src="Img/oferta2.jpg" alt="oferta2" class="img-fluid">
-            </div>
-            <div class="col-3">
-                <img src="Img/oferta3.jpg" alt="oferta3" class="img-fluid">
-            </div>
-            <div class="col-3">
-                <img src="Img/oferta4.jpg" alt="oferta4" class="img-fluid">
+    <!-- Produtos -->
+    <section class="products">
+        <div class="products-container" id="productsContainer">
+        <div class="card" data-name="Produto 1">
+            <img src="Img/oferta1.jpg" alt="Produto 1" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Produto 1</h5>
             </div>
         </div>
+        <div class="card" data-name="Produto 2">
+            <img src="Img/oferta2.jpg" alt="Produto 2" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Produto 2</h5>
+            </div>
+        </div>
+        <div class="card" data-name="Produto 3">
+            <img src="Img/oferta3.jpg" alt="Produto 3" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Produto 3</h5>
+            </div>
+        </div>
+        <div class="card" data-name="Produto 4">
+            <img src="Img/oferta4.jpg" alt="Produto 4" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Produto 4</h5>
+            </div>
+        </div>
+        <!-- Coloquei os códigos de acordo com o exemplo da aula para a funcionalidade da barra de pesquisa, mas ainda não está funcionando -->
     </div>
+    </section>
+
     <br>
+
     <!--Atualizei o banner de montagem de pc e coloquei as ofertas entre ele e os outros banners-->
     <div class="container-fluid">
         <div class="row justify-content-md-center">
