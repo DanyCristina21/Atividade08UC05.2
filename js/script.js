@@ -39,7 +39,7 @@ $(document).ready(function () {
             });
         } else {
             $("#loginSection").html(`
-                <a href="login.html" id="loginButton" class="button"><img src="Img/loginButton.png"></a>
+                    <a href="login.html" id="loginButton" class="button"><img src="Img/loginButton.png"></a>
             `);
         }
     }
@@ -56,7 +56,7 @@ $(document).ready(function () {
         // Simulação de validação (substitua com validação real)
         if (username === "admin" && password === "1234") {
             localStorage.setItem("user", username);
-            window.location.href = "index.html";
+            window.location.href = "index.html", "celulares.html";
         } else {
             $("#loginMessage").text("Usuário ou senha incorretos.");
         }

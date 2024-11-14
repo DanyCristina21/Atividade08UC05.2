@@ -264,6 +264,7 @@ input{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
+
 /* Estilo da Tela de Login */
 .login-container {
     max-width: 400px;
@@ -377,19 +378,21 @@ input{
     margin: 0 0.5rem;
 }
 
-.menu .categories a, #loginButton, .cart {
+.menu .categories a, #loginButton {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
 }
 
- .cart {
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+.cart {
+
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+
 }
+
+
 
 #loginButton:hover, .cart:hover {
     background-color: #0056b3;
@@ -450,6 +453,22 @@ input{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	z-index: 1000; /* Garante que o pop-up fique sobre outros elementos */
+}
+
+/* Estilo da Página do Carrinho */
+.cart-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+.cart-container h2 {
+    margin-bottom: 1rem;
 }
 
 
